@@ -1,0 +1,251 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.logo {
+  color: purple;
+  text-transform: none;
+  letter-spacing: 5px;
+  font-size: 20px;
+  display: flex;
+}
+
+.logo a{
+  color: purple;
+  font-size: 2rem;
+  letter-spacing: .1rem;
+  text-decoration: unset;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+
+.nav-links li {
+  list-style-type: none;
+}
+
+.nav-links a {
+  color: purple;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-style: 14px;
+  font-family: Nanotech LLC;
+  transition: ease-out 0.5s;
+}
+.nav-links a:hover{
+    color: black;
+    /* text-decoration: underline; */
+}
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: purple;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+.burger div:hover{
+    background-color: black;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.image {
+    height: 50px;
+  margin-right: 20px;
+}
+/* TABLET */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    width: 60%;
+  }
+}
+
+/* MOBILE */
+@media screen and (max-width: 768px) {
+  /* test it with: body{
+        display:none;
+    } */
+
+  body {
+    overflow-x: hidden;
+  }
+
+  /* WHAT SHOULD HAPPEN TO THE NAV-LINKS WHEN WE GET TO MOBILE */
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: white;       
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  /* i want the nav bar lists not to show, so that when we click on the burger icon it slowly fades in */
+  .nav-links li {
+    opacity: 0;
+  }
+
+  .burger {
+    display: block;
+  }
+}
+/* add image as logo */
+#logo-image {
+  float: left;
+  width: 20px;
+  height: 15px;
+  margin-right: 10px;
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+/* now what we have to do is to animate the list into the humburger menu
+...so lets build an animation
+*/
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+/* this is the last code to add. After all is said and done */
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Gobe */
+.sec{
+    font-family: Nanotech LLC;
+}
+.sec h3{
+    font-family: Nanotech LLC;
+    text-align: center;
+    color: brown;
+    text-transform: uppercase;
+    margin: 7px 0 7px 0;
+}
+.sec li{
+    margin: 0 0 0 50px;
+}
+/* Gobe */
+.opo{
+    width: 100%;
+    height: 75vh;
+    background-color: purple;
+}
+.abtme{
+    float: left;
+    display: inline-block;
+    justify-content: space-evenly;
+    background-color: greenyellow;
+    height: 100%;
+    width: 40%;
+    align-items: center;
+    /* margin: 0 50px 0 50px; */
+    margin: 0 1%;
+    
+}
+.abtme:first-child{
+    margin-left: 9%;
+    background-color: transparent;
+
+}
+.abtme:last-child{
+    background-color: transparent;
+}
+.smWel, .hdel{
+    color: white;
+    padding-bottom: 5px;
+}
+.tat{
+    font-family: Nanotech LLC;
+    padding: 10px 25px;
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
+    /* transition: linear; */
+}
+.tat:hover{
+    background: white;
+    color: purple;
+    border: 2px solid purple;
+}
+.content{
+    margin: auto;
+    margin-left: 10%;
+    margin-top: 20%;
+    font-family: Nanotech LLC;
+    font-size: 25px;
+   
+}
+
+.imim{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    /* background-color: olive; */
+    background-image: url(./images/auba.png);
+    background-size: cover;
+}
+.nav2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: white;
+    font-family: "Poppins", sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+.nav2{
+    font-family: Nanotech LLC;
+    color: purple;
+    font-weight: 800;
+}

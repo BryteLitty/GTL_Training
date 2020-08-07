@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dela Assignment</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+        body{
+            font-family: Arial Unicode MS;
+            font-weight: bold;
+        }
+        .form{
+            margin: auto;
+            width: 50%;
+            height: 70vh;
+            /* background-color: rgba(0, 0, 0, 0.24); */
+            background-color: rgba(126, 126, 65, 0.13);
+            border-radius: 3px;
+        }
+        .ll{
+            margin: auto;
+            width: 90%;
+            height: 50vh;
+            margin-top: 20px;
+        }
+        label{
+            padding-top: 8px;
+            color: rgb(80, 74, 74);
+        }
+        input{
+            width: 100%;
+            height: 4vh;
+            outline: none;
+            margin: 0 auto;
+            font-family: Arial Unicode MS;
+            margin-top: 8px;
+            margin-bottom: 8px;
+            border-style: solid;
+            border-width: 2px;
+            border-color: rgba(68, 64, 64, 0.151);
+            border-radius: 3px;
+            padding-left: 5px;
+        }
+        .selbtn{
+            width: 100%;
+            height: 5vh;
+            /* border: none; */
+            outline: none;
+            margin: 0 auto;
+            margin-top: 8px;
+            margin-bottom: 8px;
+            font-family: Arial Unicode MS;
+            border-style: solid;
+            border-width: 2px;
+            border-color: rgba(68, 64, 64, 0.151);
+            border-radius: 3px;
+            font-weight: 600;
+        }
+        #subbtn{
+            width: 60px;
+            height: 5vh;
+            background-color: rgb(1, 129, 1);
+            color: white;
+            outline: none;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        textarea{
+            width: 100%;
+            outline: none;
+            margin-top: 8px;
+            font-family: Arial Unicode MS;
+            /* margin-bottom: 5px; */
+            border-style: solid;
+            border-width: 2px;
+            border-color: rgba(68, 64, 64, 0.151);
+            border-radius: 3px;
+            padding-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+      <div class="logo">
+        <h4><a href="index.html">purpleSpace</a></h4>      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="assignment.html">ASSIGNMENTS</a></li>
+        <li><a href="#">PROJECTS</a></li>
+        <li><a href="notes.html">NOTES</a></li>
+      </ul>
+
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+    <form action="" class="form">
+        <div class="ll">
+        <label for="firstName">First Name</label><br>
+        <input type="text" placeholder="Your First Name" required><br>
+
+        <label for="lastName">Last Name</label><br>
+        <input type="text" placeholder="Your Last Name" required><br>
+
+        <label for="country">Country</label><br>
+        <select name="" id="" class="selbtn">
+            <option value="">Australia</option>
+            <option value="">Ghana</option>
+            <option value="">Nigeria</option>
+            <option value="">USA</option>
+            <option value="">Jamestown</option>
+            <option value="">Nima</option>
+            <option value="">Ashiaman</option>
+            <option value="">Osu</option>
+            <option value="">Abeka Lapaz</option>
+        </select><br>
+        <label for="subject">Subject</label><br>
+        <textarea 
+            name="" 
+            id="" 
+            cols="38" 
+            rows="8" 
+            placeholder="Write Something ..."
+        ></textarea><br>
+
+        <input type="submit" name="Submit" id="subbtn">
+        </div>
+    </form>
+    <script src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* background-image: linear-gradient(rgb(247, 247, 247),rgb(187, 211, 209)); */
+    background-color: orangered;
+    font-family: Nanotech LLC;
+    min-height: 100vh;
+}
+header{
+    font-size: 1.5rem;
+}
+header, form{
+    /* margin: 10px 30px 10px 30px; */
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form input, form button{
+    border: none;
+    padding: 0.5rem;
+    outline: none;
+    min-height: 6vh;
+    /* border: 0px solid grey; */
+}
+form input{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-family: Nanotech LLC;
+    color: rgb(148, 84, 0);
+}
+button{
+    cursor: pointer;
+    transition: ease-in 0.5s;
+    background-color: burlywood;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+button:hover{
+    background: rgb(132, 132, 248);
+    
+}
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo-list{
+    min-width: 30%;
+    list-style: none;
+
+}
+.todo{
+    margin: 0.5rem;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.todo li{
+    flex: 1;
+}
+.trash-btn, .complete-btn{
+    /* background-color: rgb(255, 255, 255)255, 255);  */
+    padding: 1rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 0px;
+    outline: none;
+    color: white;
+}
+.trash-btn{
+    background-color: red;
+}
+.complete-btn{
+    background: green;
+}
+.todo-item{
+    padding: 0rem 0.5rem;
+
+}
+.fa-trash, .fa-check{
+    pointer-events: none;
+}
+.completed{
+    text-decoration:  orangered line-through;
+    opacity: 0.5;
+
+}
